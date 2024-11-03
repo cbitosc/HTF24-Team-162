@@ -1,76 +1,58 @@
-# HTF24-Team-162
+# Need A Puppy? Take A Puppy!
 
-## GitHub submission guide
+Now deployed on Github Pages!
 
-In this Readme, you will find a guide on how to fork this Repository, add files to it, and make a pull request to contribute your changes.
+[Need A Puppy Take A Puppy](https://keith-flynn.github.io/pet-adoption-website-frontend/)
 
-<details open>
-<summary><h3>1. Login to your GitHub Account by heading over to <a href="https://github.com">github.com</a></h3></summary>
-<br>
-<ul>
-   <li>Open the <a href="https://github.com/cbitosc/HTF24-Team-162">current repo</a> in a new tab.</li>
-   <li>Perform all operations in the newly opened tab, and follow the current tab for instructions.</li>
-</ul>
-</details>
+## About My Pet Adoption Website
 
-<details>
-<summary><h3>2. Fork the Repository</h3></summary>
-<br>
-<ul>
- <li>In the newly opened tab, on the top-right corner, click on <b>Fork</b></li>
- <img src="/images/fork.png">
+### A mock website to adopt your next adorable dog or cat.
 
- <li>Enter the <b>Repository Name</b> as <b>HTF24-Team-162</b>.</li>
- <li>Then click <b>Create Fork</b> leaving all other fields to their default value.</li>
- <img src="/images/create-fork.png">
- <li>After a few moments, you can view the repo.</li>
-</ul>
-</details>
+Built using HTML, CSS, and JavaScript to serve the frontend on your browser, and Node.js and Express.js as a RESTful API server, Need A Puppy Take A Puppy offers up results for your potential pet adoptions. With responsive displays designed for mobile devices, tablets, and desktop web browsers, users can utilize NAPTAP's robust filtering options to find the perfect fuzzy friend for your family today!
 
-<details>
-<summary><h3>3. Clone your Repository</h3></summary>
-<br>
-<ul>
- <li>Click on <b>Code</b> and from the dropdown menu copy your <b>web URL</b> in your forked Repository. </li>
- <img src="/images/clone1.png">
- <li>Now open terminal on your local machine.</li>
- <li>Use the following command to clone your forked Repository:</li>
-<code> git clone https://github.com/your-username/HTF24-Team-162.git </code>
-<hr>
- <img src="/images/clone2.png">
+## To Run
 
-</ul>
-</details>
+ - Clone the repository 
+   - `git clone https://github.com/keith-flynn/pet-adoption-website.git`
+ - Change directory to newly cloned repo
+   - `cd pet-adoption-website`
+ - Install Node
+   - `npm install`
+ - Start the server using Node
+   - `node index.js`
+ - Launch index.html using [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code
+   - In Visual Studio Code, right click either anywhere inside of the opened index.html file, or right click on index.html itself in the file explorer of VS Code. Select "Open with Live Server [Alt+L Alt+O]"
 
-<details>
-<summary><h3>4. Adding files to the Repository</h3></summary>
-<br/>
-<ul>
- <li>While doing it for the first time, create a new branch for your changes.</li>
-   <code> git checkout -b branch-name </code>
-   <li>Add your files or make modifications to existing files.</li>
-   <li>Stage your changes:</li>
-   <code> git add . </code>
-   <li>Commit your changes:</li>
-   <code> git commit -m "Descriptive commit message" </code>
-   <li>Push changes to your fork </li>
-   <code> git push origin branch-name </code>
-   <hr>
-   
- <img src="/images/push.png">
-</ul>
-</details>
+If you do not already have Node installed on your system, it can be downloaded from the official [download page](https://nodejs.org/en/download)
 
-<details>
-<summary><h3>5. Create a Pull Request</h3></summary>
-   <br>
-<ul>
- <li>Finally, click on the <b>Contribute</b> button and choose <b>Open Pull Request</b>.</li>
- <img src="/images/PR1.png">
- <li>Leaving all fields to their default values, click on <b>Create Pull Request</b>.</li>
- <img src="/images/PR2.png">
- <li>Wait for a few moments, then you are all done</li>
-</ul>
-</details>
+## Features
 
-## Thanks for participating!
+:warning: If you are grading this project, [Check Here!](https://github.com/keith-flynn/pet-adoption-website/tree/main/project-review) :warning:
+
+### Front End
+
+ - Search filter dropdowns are populated dynamically at page load and with the switch of the dog/cat toggle (doggle)
+ - Toggle selection of dog or cat persists between page visits in local storage.
+ - Input in the search field is sterilized to only include alphanumeric
+ - An appealing loading screen while the user briefly waits for results
+ - Beautifully displayed pet results that dynamically shift depending on the viewing device (Mobile and Desktop)
+ - A scroll to top button for when your search returns a mountain of fuzzy friends
+ - A perfect Lighthouse score (if you disable google fonts)
+
+### Back End
+ - Robust error handling and logging system
+ - Serve data based on ID, type (dog/cat), breed, size, age, gender, color, and/or name
+ - Modular files can be [swapped](https://github.com/keith-flynn/pet-adoption-website/tree/mongo) to serve MongoDB Atlas Cloud
+ - Wrap responses in industry standard JSON envelope format
+
+## Resources
+
+Logos generated using [Adobe Express Logo Maker](https://express.adobe.com/express-apps/logo-maker/preview)
+
+Color scheme at [Colorhunt.com](https://colorhunt.co/palette/1b262c0f4c753282b8bbe1fa)
+
+All of this was made possible by [Petfinder.com](https://www.petfinder.com/) We thank them for their efforts in finding homes for all of these little goofballs as well as helping developers learn RESTful API usage at scale in a live environment.
+
+[Petfinder API Documentation](https://www.petfinder.com/developers/v2/docs/)
+
+[deploy-replit](https://github.com/keith-flynn/pet-adoption-website/tree/deploy-replit) branch middleware is served by [Replit.com](https://replit.com/)
